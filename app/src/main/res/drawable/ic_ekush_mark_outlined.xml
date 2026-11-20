@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2026 Ekush contributors
+  Licensed under the GNU General Public License v3.0 (GPL-3.0).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outlined অ mark for in-app empty states (Blueprint Part 02.7) -->
+    <path
+        android:strokeColor="#006A4E"
+        android:strokeWidth="1.6"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M 68.60 72.11 Q 66.37 68.72 63.76 66.68 Q 61.14 64.65 57.99 63.33 L 61.20 57.93 Q 62.81 58.56 64.44 59.74 Q 66.08 60.91 67.49 62.32 Q 68.89 63.73 69.81 65.28 L 68.89 65.28 Q 68.83 64.36 68.75 63.41 Q 68.66 62.46 68.60 61.49 Q 68.55 60.51 68.55 59.54 L 68.55 42.32 L 27.00 42.32 L 27.00 35.89 L 81.00 35.89 L 81.00 42.32 L 76.24 42.32 L 76.24 72.11 Z" />
+    <path
+        android:strokeColor="#006A4E"
+        android:strokeWidth="1.6"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M 49.95 69.29 Q 46.11 69.29 42.81 68.06 Q 39.51 66.83 36.81 64.13 Q 34.12 61.43 32.11 57.10 Q 30.10 52.77 28.72 46.63 L 35.78 45.02 Q 36.76 49.38 37.96 52.59 Q 39.17 55.81 40.80 57.87 Q 42.44 59.94 44.53 60.97 Q 46.63 62.01 49.32 62.01 Q 51.73 62.01 53.37 61.20 Q 55.00 60.40 55.87 58.96 Q 56.73 57.53 56.73 55.64 Q 56.73 53.34 55.66 52.02 Q 54.60 50.70 52.82 50.70 Q 51.56 50.70 50.96 51.39 Q 50.36 52.08 50.36 53.05 L 44.90 52.08 Q 44.90 51.04 45.65 50.01 Q 46.40 48.98 48.23 48.29 Q 50.07 47.60 53.28 47.60 Q 53.51 48.12 53.74 49.35 Q 53.97 50.59 53.97 51.85 Q 53.97 54.14 52.51 55.52 Q 51.04 56.90 48.75 56.90 Q 46.22 56.90 44.62 55.29 Q 43.01 53.68 43.01 51.22 Q 43.01 48.29 45.31 46.37 Q 47.60 44.45 51.73 44.45 Q 55.75 44.45 58.48 46.08 Q 61.20 47.72 62.61 50.47 Q 64.01 53.23 64.01 56.61 Q 64.01 58.85 63.27 61.12 Q 62.52 63.38 60.86 65.22 Q 59.19 67.06 56.50 68.17 Q 53.80 69.29 49.95 69.29 Z" />
+    <path
+        android:strokeColor="#F42A41"
+        android:strokeWidth="1.6"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M 47.00,45.10 A 4.40,4.40 0 1,0 47.00,53.90 A 4.40,4.40 0 1,0 47.00,45.10 Z" />
+</vector>

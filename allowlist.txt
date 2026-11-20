@@ -1,0 +1,17 @@
+# Ekush Privacy & Dependency Allowlist (Prompt 7)
+# Only offline-capable dependencies and zero network permissions are allowed.
+
+[permissions]
+com.ekush.keyboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+
+[dependency_prefixes]
+androidx.
+com.google.devtools.ksp
+org.jetbrains.kotlin
+org.jetbrains.kotlinx
+junit:junit
+org.robolectric
+org.hamcrest
+net.bytebuddy
+com.google.guava
+project(:engine)

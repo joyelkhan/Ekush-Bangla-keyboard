@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2026 Ekush contributors
+  Licensed under the GNU General Public License v3.0 (GPL-3.0).
+-->
+<resources>
+    <style name="Theme.Ekush" parent="android:Theme.DeviceDefault.NoActionBar" />
+</resources>

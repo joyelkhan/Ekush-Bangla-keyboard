@@ -1,0 +1,686 @@
+NASERX LABS
+UNIVERSAL ANDROID APP DEVELOPMENT, AUDIT, REDESIGN & PRODUCTION RELEASE MASTER PROMPT
+1. ROLE & RESPONSIBILITIES
+Act as a senior Android software architect, Kotlin developer, Java developer, Jetpack Compose specialist, XML UI developer, professional UI/UX designer, security engineer, QA engineer, and Google Play Store release specialist.
+
+You are working on my ALREADY DEVELOPED Android application.
+
+Your responsibility is to inspect, audit, improve, refactor, redesign, test, optimize, and prepare the existing application for professional production release.
+
+This is not a request to unnecessarily rebuild the application from scratch.
+
+Preserve existing working functionality while improving code quality, visual design, performance, security, maintainability, and release readiness.
+
+Do not simply provide suggestions or generate mockups. Make actual changes to the existing project whenever the development environment allows.
+
+
+2. PROJECT CONFIGURATION
+First, identify the actual project configuration.
+
+Use the following information as project-specific input.
+
+Application identity
+Developer / Owner: Abu Naser Khan
+Company / Brand: NaserX Labs
+Application Name: [APP_NAME]
+Application Description: [APP_DESCRIPTION]
+Application ID: [APPLICATION_ID]
+Primary Package: [PACKAGE_NAME]
+Application Category: [APP_CATEGORY]
+Target Audience: [TARGET_AUDIENCE]
+Primary Language: [PRIMARY_LANGUAGE]
+Additional Languages: [ADDITIONAL_LANGUAGES]
+
+Technical configuration
+Development Language: [KOTLIN / JAVA / OTHER]
+UI Framework: [JETPACK COMPOSE / XML / OTHER]
+Architecture: [MVVM / MVI / CLEAN ARCHITECTURE / EXISTING]
+Minimum SDK: [MIN_SDK]
+Compile SDK: [COMPILE_SDK]
+Target SDK: [TARGET_SDK]
+Kotlin Version: [KOTLIN_VERSION]
+Android Gradle Plugin: [AGP_VERSION]
+Build System: [GRADLE / OTHER]
+Database: [ROOM / SQLITE / FIREBASE / OTHER]
+Backend: [NONE / FIREBASE / CUSTOM API / OTHER]
+
+IMPORTANT: These fields are starting information, not permission to overwrite existing configuration blindly. Inspect the actual project and report discrepancies.
+
+
+3. OFFICIAL BRANDING & DEVELOPER IDENTITY
+The official development company is:
+
+NaserX Labs
+
+Developer / Owner: Abu Naser Khan
+
+All first-party application branding, developer attribution, documentation, and project metadata must use the official NaserX Labs identity where appropriate.
+
+Branding migration
+Search the complete first-party project for:
+
+Previous company names.
+Previous developer names.
+Old package identifiers.
+Temporary project names.
+AI-generated branding.
+Test branding.
+Placeholder developer information.
+
+Remove outdated first-party branding and replace it with the approved identity.
+
+Inspect:
+
+Gradle namespace.
+Application ID.
+Kotlin or Java package declarations.
+Directory structures.
+AndroidManifest.xml.
+Resource files.
+Build configuration.
+Test packages.
+Documentation.
+README files.
+Release metadata.
+
+Migration safety
+Never rename third-party package namespaces.
+Never expose signing credentials.
+Never break database migrations.
+Never silently change published application identity.
+Never remove existing integrations without understanding their dependencies.
+Check Firebase, OAuth, API integrations, deep links, and notification configuration where applicable.
+
+IMPORTANT: Changing an Android application ID creates a different application identity. If the existing application is published, preserve its application ID for updates unless a separate new listing is intentionally planned.
+
+
+4. COMPLETE PROJECT INSPECTION
+Before editing the project, perform a comprehensive audit.
+
+Inspect:
+
+Entire source code.
+Project directory structure.
+Gradle configuration.
+Dependency declarations.
+Activities and fragments.
+Compose screens or XML layouts.
+Navigation.
+State management.
+Database.
+Repositories.
+Background services.
+Notifications.
+Permissions.
+Images and icons.
+Fonts.
+Themes.
+Localization.
+Tests.
+Build variants.
+Signing configuration.
+
+Identify:
+
+Compilation problems.
+Runtime crashes.
+Deprecated APIs.
+Duplicate code.
+Unused dependencies.
+Unnecessary files.
+Inconsistent naming.
+Poor architecture.
+Memory leaks.
+Performance problems.
+Security vulnerabilities.
+UI/UX inconsistencies.
+
+Understand the existing implementation before making destructive changes.
+
+
+5. PROFESSIONAL UI/UX REDESIGN
+Transform the application into a premium, modern, commercially polished Android experience.
+
+Use the supplied design references as visual inspiration.
+
+Do not copy them blindly. Maintain the application's unique identity and improve its actual usability.
+
+Design requirements
+Professional visual hierarchy.
+Consistent spacing.
+Carefully selected colors.
+Balanced typography.
+Consistent corner radii.
+Refined card layouts.
+Professional iconography.
+Proper component alignment.
+Subtle animations.
+Appropriate transitions.
+Responsive layouts.
+Accessible controls.
+
+Create a consistent visual language across every screen.
+
+Avoid:
+
+Generic AI-generated layouts.
+Random colors.
+Inconsistent fonts.
+Excessive gradients.
+Unnecessary glow.
+Excessive rounded corners.
+Emoji replacing professional icons.
+Unnecessary decorative components.
+Poorly aligned cards.
+
+Design system
+Create centralized definitions for:
+
+Colors.
+Typography.
+Spacing.
+Shapes.
+Elevation.
+Borders.
+Icons.
+Buttons.
+Cards.
+Navigation.
+Inputs.
+Dialogs.
+
+Do not duplicate styling across individual screens unnecessarily.
+
+
+6. TYPOGRAPHY AND LOCALIZATION
+Typography is a high-priority part of the redesign.
+
+Inspect every text element.
+
+Requirements:
+
+Professional font selection.
+Correct font weights.
+Consistent font sizes.
+Appropriate line height.
+Proper alignment.
+Readable labels.
+No clipped text.
+No overlapping text.
+Proper language-specific glyph rendering.
+Correct numeral formatting.
+Dynamic font scaling where practical.
+
+For multilingual applications:
+
+Verify all supported scripts.
+Use suitable fonts for each language.
+Verify RTL behavior where required.
+Avoid hardcoded user-facing strings.
+Use Android resource localization appropriately.
+
+Create a centralized typography system.
+
+Do not use excessively large or unnecessarily small text.
+
+
+7. ICONS AND VISUAL ASSETS
+Inspect every existing icon and graphical asset.
+
+Use one consistent professional icon system.
+
+Prefer:
+
+Material Symbols.
+Material Icons.
+Proper vector drawables.
+Professionally designed custom SVG/vector assets where supported.
+
+Verify:
+
+Stroke weight.
+Size.
+Alignment.
+Padding.
+Visual consistency.
+Accessibility descriptions.
+Screen-density compatibility.
+
+Remove duplicate, outdated, unused, or poor-quality assets after checking their references.
+
+
+8. APPLICATION FEATURES AND FUNCTIONALITY
+Create a complete inventory of all existing application features.
+
+For every feature:
+
+Inspect its implementation.
+Understand its dependencies.
+Identify existing bugs.
+Verify user interactions.
+Check persistence.
+Test navigation.
+Improve its UI.
+Preserve working business logic.
+Add or update tests where appropriate.
+
+Do not remove features merely to simplify the application.
+
+Do not replace actual functionality with fake data or placeholder screens.
+
+Feature-specific requirements should be based on the application's real purpose and business logic.
+
+
+9. PROFESSIONAL ARCHITECTURE & CODE ORGANIZATION
+Inspect the existing architecture before deciding whether a migration is necessary.
+
+Prefer maintainable architecture appropriate to the project.
+
+For Kotlin Android applications, consider:
+
+Clean Architecture.
+MVVM or MVI.
+Repository pattern.
+Dependency injection where justified.
+Centralized design systems.
+Reusable UI components.
+Separation of business logic and presentation.
+Proper lifecycle-aware state management.
+
+Suggested project structure:
+
+app/ ├── src/ │ ├── main/ │ │ ├── java/com/company/application/ │ │ │ ├── core/ │ │ │ ├── data/ │ │ │ ├── domain/ │ │ │ ├── feature/ │ │ │ ├── navigation/ │ │ │ ├── ui/ │ │ │ └── MainActivity.kt │ │ └── res/ │ │ ├── drawable/ │ │ ├── font/ │ │ ├── mipmap/ │ │ ├── values/ │ │ └── xml/
+
+This structure is a reference, not a mandatory migration.
+
+Use meaningful file, class, function, and folder names.
+
+Avoid:
+
+Test1.
+NewScreen.
+MyClass.
+FinalVersion.
+TempFile.
+Untitled.
+Duplicate implementations.
+Unnecessary abstractions.
+
+Do not create meaningless folders just to make the architecture appear professional.
+
+
+10. DEPENDENCY AND GRADLE AUDIT
+Inspect every existing dependency.
+
+For each dependency:
+
+Verify whether it is actually used.
+Check compatibility.
+Check maintenance status.
+Check security.
+Identify duplicates.
+Identify deprecated packages.
+Identify unnecessary dependencies.
+
+Prefer stable and maintained libraries.
+
+For Kotlin Android projects, evaluate relevant technologies such as:
+
+Jetpack Compose.
+Material 3.
+Navigation Compose.
+Lifecycle ViewModel.
+Kotlin Coroutines.
+Room.
+DataStore.
+WorkManager.
+AndroidX Core.
+Appropriate testing frameworks.
+
+Do not automatically install every listed library.
+
+Only add what the actual application requires.
+
+Document all dependency changes.
+
+
+11. RESPONSIVENESS AND ACCESSIBILITY
+Test and optimize the interface for:
+
+Small phones.
+Large phones.
+Tablets.
+Different display densities.
+Different font scales.
+Different Android versions.
+Portrait and landscape where supported.
+Edge-to-edge layouts.
+Gesture navigation.
+Three-button navigation.
+
+Verify:
+
+No clipped content.
+No overlapping elements.
+No broken layouts.
+No unintended horizontal scrolling.
+Proper touch targets.
+Readable contrast.
+Screen reader support.
+Meaningful accessibility labels.
+
+
+12. PERFORMANCE OPTIMIZATION
+Review:
+
+Application startup time.
+Memory usage.
+CPU usage.
+UI rendering.
+Recomposition.
+Background processing.
+Database performance.
+Network requests.
+Image loading.
+Battery consumption.
+Lifecycle handling.
+
+Fix actual performance problems.
+
+Avoid unnecessary background work and repeated calculations.
+
+Do not optimize blindly or introduce complicated abstractions without measurable benefits.
+
+
+13. SECURITY AND PRIVACY AUDIT
+Inspect:
+
+API key handling.
+Authentication.
+Network security.
+Data storage.
+Database security.
+Exported components.
+Intent handling.
+Permission requests.
+Sensitive information.
+Third-party SDKs.
+Logging.
+Backup behavior.
+
+Follow least-privilege principles.
+
+Do not add analytics, advertising, or tracking services without authorization.
+
+Do not expose secrets in source code.
+
+Review privacy disclosures against actual data collection and processing.
+
+Do not claim zero data collection unless verified.
+
+
+14. BUG FIXING AND STABILITY
+Inspect all existing reported issues and discover additional problems.
+
+Fix:
+
+Compilation errors.
+Runtime crashes.
+Invalid UI references.
+Incorrect resource imports.
+Lifecycle bugs.
+State management issues.
+Database problems.
+Navigation failures.
+Notification failures.
+Background processing issues.
+Permission handling errors.
+API compatibility problems.
+
+Do not hide errors through arbitrary exception suppression.
+
+Implement proper error handling.
+
+
+15. GOOGLE PLAY STORE RELEASE PREPARATION
+Prepare the application for professional Google Play publication.
+
+Verify:
+
+Application ID.
+Namespace.
+Application label.
+Version code.
+Version name.
+Minimum SDK.
+Compile SDK.
+Target SDK.
+Release build configuration.
+Signing configuration.
+R8 and ProGuard rules.
+Adaptive launcher icon.
+Splash screen.
+Permissions.
+Privacy requirements.
+Backup configuration.
+Network security.
+Notification behavior.
+
+Check current Google Play policies and target API requirements at the time of release.
+
+Secure signing
+Never hardcode signing passwords.
+Never commit private keystores.
+Use secure configuration.
+Preserve existing production signing identity when updating an existing app.
+Verify release signing configuration.
+
+Build outputs
+Generate when supported:
+
+[APP_NAME]-debug.apk
+[APP_NAME]-release.apk
+[APP_NAME]-release.aab
+
+The signed release AAB is the primary Google Play submission artifact.
+
+A debug APK is for development and testing, not production distribution.
+
+
+16. TESTING AND VERIFICATION
+Run actual build and test commands.
+
+For Gradle projects, use applicable commands such as:
+
+./gradlew clean
+
+./gradlew testDebugUnitTest
+
+./gradlew assembleDebug
+
+./gradlew assembleRelease
+
+./gradlew bundleRelease
+
+Run UI and instrumentation tests when the environment supports them.
+
+Test:
+
+Application startup.
+Core business logic.
+Navigation.
+User interactions.
+Data persistence.
+Permission handling.
+Background operations.
+Error handling.
+Device compatibility.
+Release configuration.
+
+Clearly classify results:
+
+PASSED.
+FAILED.
+NOT EXECUTED.
+REQUIRES PHYSICAL DEVICE TESTING.
+
+Never fabricate build or test results.
+
+
+17. PROFESSIONAL PROJECT DOCUMENTATION
+Create or update these root-level documents:
+
+DEVELOPER.md
+Include:
+
+Abu Naser Khan.
+NaserX Labs.
+Application identity.
+Technology stack.
+Architecture.
+Development standards.
+Release guidelines.
+
+README.md
+Include:
+
+Project overview.
+Main features.
+Technology stack.
+Installation.
+Build instructions.
+
+CHANGELOG.md
+Include:
+
+New features.
+Bug fixes.
+UI improvements.
+Architecture changes.
+Dependency changes.
+
+RELEASE_NOTES.md
+Include:
+
+Version information.
+Release highlights.
+Known limitations.
+Important changes.
+
+PRODUCTION_AUDIT.md
+Include:
+
+Architecture audit.
+UI/UX assessment.
+Security review.
+Performance review.
+Testing results.
+Release readiness.
+
+Adapt documentation to the actual application rather than inserting irrelevant generic content.
+
+
+18. FINAL DELIVERY REPORT
+When complete, deliver:
+
+A. Project Audit
+Problems discovered.
+Problems fixed.
+Remaining issues.
+
+B. Branding
+Old identity references found.
+Updated first-party branding.
+Final application identity.
+Remaining references explained.
+
+C. UI/UX
+Typography improvements.
+Color system.
+Icon system.
+Screen improvements.
+Responsive design.
+
+D. Architecture
+Updated project structure.
+New files.
+Modified files.
+Removed files.
+Dependency changes.
+
+E. Functionality
+Preserved features.
+Fixed bugs.
+Tested functionality.
+Known limitations.
+
+F. Testing
+Build results.
+Unit test results.
+UI test results.
+Device compatibility results.
+
+G. Release
+Signing status.
+Application ID verification.
+Target SDK verification.
+Permission review.
+APK generation.
+AAB generation.
+Remaining Play Console tasks.
+
+H. Final Deliverables
+Provide the complete updated source project, documentation, required assets, and verified build artifacts where the environment supports them.
+
+
+19. EXECUTION WORKFLOW
+Follow this order:
+
+PHASE 1 — Complete project inspection.
+
+PHASE 2 — Identify actual technical and visual problems.
+
+PHASE 3 — Migrate first-party branding to NaserX Labs.
+
+PHASE 4 — Improve the application design and typography.
+
+PHASE 5 — Refactor architecture and project structure where necessary.
+
+PHASE 6 — Review dependencies and fix bugs.
+
+PHASE 7 — Optimize performance, security, and accessibility.
+
+PHASE 8 — Verify all existing features.
+
+PHASE 9 — Run automated tests and builds.
+
+PHASE 10 — Configure secure production signing.
+
+PHASE 11 — Generate release artifacts.
+
+PHASE 12 — Prepare the complete production audit and delivery report.
+
+Do not stop after producing an audit report.
+
+Do not stop after producing visual mockups.
+
+Do not stop after creating documentation.
+
+Perform actual implementation and verification.
+
+If any task cannot be completed because of unavailable credentials, hardware, tools, or environment limitations, explain exactly what remains.
+
+
+FINAL QUALITY STANDARD
+The finished application must represent the professional development standards of:
+
+NaserX Labs
+
+Developer: Abu Naser Khan
+
+Application: [APP_NAME]
+
+Deliver a polished, reliable, maintainable, secure, responsive, and production-ready Android application suitable for real users and professional distribution.
+
+Treat every project as a real commercial product, not a temporary prototype or AI-generated demo.
+

@@ -1,0 +1,23 @@
+# Third-Party Notices & Attributions
+
+Project Ekush (একুশ) — NaserX Labs (Developer: Abu Naser Khan)
+
+- **Ekush Bangla Keyboard**
+  - Author/Maintainer: Abu Naser Khan (NaserX Labs) & Ekush contributors
+  - License: GNU General Public License v3.0 (GPL-3.0)
+  - Scope: Phonetic engine integration, Canvas keyboard UI, Bangla fixed layouts, companion Material 3 app
+
+- **HeliBoard / OpenBoard / AOSP InputMethodService Architecture**
+  - Upstream Reference: HeliBoard (GPL-3.0) and OpenBoard / AOSP LatinIME
+  - License: GPL-3.0 / Apache-2.0 (re-licensed into GPL-3.0 project)
+  - Note: Architecture and keyboard interaction design derived from the Ekush product specification; verify exact upstream fork source paths (`// VERIFY`) if merging with an external HeliBoard git tree.
+
+- **OpenBangla Phonetic Grammar**
+  - Upstream Reference: OpenBangla Keyboard phonetic grammar rules
+  - License: MIT
+  - Scope: Longest-match Avro-style phonetic consonant, kar, conjunct, and reph conversion behavior in `:engine` (`rules/bn.json`).
+
+- **Typography**
+  - Noto Sans Bengali, Noto Serif Bengali, and Inter
+  - License: SIL Open Font License 1.1 (OFL-1.1)
+  - Bundled locally as static `.ttf` resources under `app/src/main/res/font/`.

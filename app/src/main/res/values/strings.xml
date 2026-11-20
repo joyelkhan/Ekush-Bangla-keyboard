@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2026 Ekush contributors
+  Licensed under the GNU General Public License v3.0 (GPL-3.0).
+-->
+<resources>
+    <string name="app_name">Ekush</string>
+    <string name="ime_service_name">Ekush Bangla Keyboard</string>
+    <string name="app_tagline_heritage">In the mother tongue, with pride.</string>
+    <string name="app_tagline_function">Avro-style Bangla phonetic typing, reborn for Android.</string>
+
+    <!-- Subtypes -->
+    <string name="subtype_bangla_phonetic">Bangla (Avro Phonetic)</string>
+    <string name="subtype_bangla_fixed">Bangla (Fixed Layout)</string>
+    <string name="subtype_english_us">English (US)</string>
+
+    <!-- Modes -->
+    <string name="mode_phonetic">Phonetic</string>
+    <string name="mode_fixed">Fixed Bangla</string>
+    <string name="mode_english">English</string>
+    <string name="mode_numbers">123</string>
+
+    <!-- Onboarding (Blueprint Part 03.11) -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_start">Start</string>
+    <string name="onboarding_next">Continue</string>
+    <string name="onboarding_finish">Finish</string>
+    <string name="onboarding_step1_title">Ekush</string>
+    <string name="onboarding_step1_subtitle">Built for the language that 1952 fought for. Offline, open-source, zero internet permission.</string>
+    <string name="onboarding_step2_title">Enable Ekush in 2 quick steps</string>
+    <string name="onboarding_step2_card1_title">1. Enable Ekush Keyboard</string>
+    <string name="onboarding_step2_card1_desc">Turn on Ekush in Android Language &amp; Input settings.</string>
+    <string name="onboarding_step2_card1_action">Open Settings</string>
+    <string name="onboarding_step2_card2_title">2. Choose Ekush as Default</string>
+    <string name="onboarding_step2_card2_desc">Select Ekush Bangla Keyboard from the input method picker.</string>
+    <string name="onboarding_step2_card2_action">Choose Keyboard</string>
+    <string name="onboarding_status_done">Done</string>
+    <string name="onboarding_status_pending">Pending</string>
+    <string name="onboarding_step3_title">60-Second Typing Test</string>
+    <string name="onboarding_step3_prompt">Type the sentence below using Phonetic mode:</string>
+    <string name="onboarding_step3_target">আমি বাংলায় মাত্র এক মিনিটে টাইপ করতে পারি</string>
+    <string name="onboarding_step3_hint">Try typing: ami banglay matro ek minite Taip korte pari</string>
+    <string name="onboarding_step3_input_label">Your typing pad</string>
+    <string name="onboarding_step3_success">Perfect! Your Bangla keyboard is ready.</string>
+    <string name="onboarding_privacy_note">No account, no analytics, no internet permission.</string>
+
+    <!-- Navigation Tabs -->
+    <string name="nav_sandbox">Test Pad</string>
+    <string name="nav_themes">Themes</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_lexicon">Lexicon</string>
+    <string name="nav_about">About</string>
+
+    <!-- Sandbox / Preview -->
+    <string name="sandbox_title">Live Typing &amp; Engine Preview</string>
+    <string name="sandbox_subtitle">Test Avro phonetic rules, conjuncts, and your active system keyboard.</string>
+    <string name="sandbox_phonetic_label">Phonetic Engine Sandbox (Pure Kotlin)</string>
+    <string name="sandbox_phonetic_hint">Type Latin phonetic text (e.g. bangladesh, bishwabidyalay, ksha)</string>
+    <string name="sandbox_output_label">Live Bangla Output</string>
+    <string name="sandbox_system_field_label">System IME Test Field</string>
+    <string name="sandbox_system_field_hint">Tap here to type with your active Android keyboard</string>
+    <string name="sandbox_otp_field_label">OTP / Number Field (Forces Latin Digits)</string>
+    <string name="sandbox_enable_banner">Ekush is not yet your active default keyboard. Tap to enable or switch.</string>
+    <string name="sandbox_copy_output">Copy Bangla Output</string>
+    <string name="sandbox_clear">Clear</string>
+    <string name="sandbox_sample_chips_title">Quick Engine Test Cases</string>
+
+    <!-- Themes (Blueprint Part 05.4) -->
+    <string name="themes_title">Themes &amp; Contrast</string>
+    <string name="themes_subtitle">Six accessible presets validated against WCAG AA contrast targets.</string>
+    <string name="theme_ekush">Ekush</string>
+    <string name="theme_ekush_desc">Flag heritage with cream paper warmth</string>
+    <string name="theme_night">Night · রাত</string>
+    <string name="theme_night_desc">True dark with high-contrast mint accent</string>
+    <string name="theme_paper">Paper · কাগজ</string>
+    <string name="theme_paper_desc">Monochrome ink-on-paper for writers</string>
+    <string name="theme_boishakh">Boishakh · বৈশাখ</string>
+    <string name="theme_boishakh_desc">Pohela Boishakh warmth with red accent</string>
+    <string name="theme_river">River · নদী</string>
+    <string name="theme_river_desc">Calm blue-green palette</string>
+    <string name="theme_material_you">Material You</string>
+    <string name="theme_material_you_desc">Follows system wallpaper on Android 12+</string>
+    <string name="theme_appearance_mode">Appearance</string>
+    <string name="theme_appearance_system">System</string>
+    <string name="theme_appearance_light">Light</string>
+    <string name="theme_appearance_dark">Dark</string>
+    <string name="theme_wcag_pass">WCAG AA Contrast Verified</string>
+    <string name="theme_wcag_ratio_format">Body %1$.1f:1 · Keys %2$.1f:1</string>
+
+    <!-- Settings Tree (Blueprint Part 03.10) -->
+    <string name="settings_title">Keyboard Settings</string>
+    <string name="settings_section_typing">Typing</string>
+    <string name="settings_default_mode">Default Typing Mode</string>
+    <string name="settings_auto_conjuncts">Phonetic Auto-Conjuncts</string>
+    <string name="settings_auto_conjuncts_desc">Automatically join consonant clusters with hasanta (e.g. ksh → ক্ষ)</string>
+    <string name="settings_bangla_digits">Prefer Bangla Numerals (০-৯)</string>
+    <string name="settings_bangla_digits_desc">Use Bangla digits in suggestions and number pad; OTP fields always stay Latin</string>
+    <string name="settings_flutter_fallback">Commit on Every Keystroke</string>
+    <string name="settings_flutter_fallback_desc">Compatibility mode for apps that handle composing regions poorly</string>
+
+    <string name="settings_section_languages">Languages</string>
+    <string name="settings_per_app_memory">Per-App Mode Memory</string>
+    <string name="settings_per_app_memory_desc">Remember Bangla or English mode separately per app</string>
+
+    <string name="settings_section_experience">Typing Experience</string>
+    <string name="settings_haptics">Key Press Haptics</string>
+    <string name="settings_haptics_desc">Tactile feedback on key press, suggestions, and mode switch</string>
+    <string name="settings_haptic_intensity">Haptic Intensity</string>
+    <string name="haptic_gentle">Gentle</string>
+    <string name="haptic_medium">Medium</string>
+    <string name="haptic_strong">Strong</string>
+    <string name="settings_sound">Key Press Sound</string>
+    <string name="settings_sound_desc">Subtle click audio on key press (off by default)</string>
+    <string name="settings_key_height">Key Height (%1$d dp)</string>
+    <string name="settings_gap_scale">Key Spacing Scale (%1$.1fx)</string>
+    <string name="settings_long_press_delay">Long-Press Delay (%1$d ms)</string>
+
+    <string name="settings_section_suggestions">Suggestions &amp; Autocorrect</string>
+    <string name="settings_suggestions_enabled">Show Suggestion Strip</string>
+    <string name="settings_suggestions_enabled_desc">Inflection-aware Bangla dictionary &amp; personal lexicon suggestions</string>
+    <string name="settings_autocorrect">Conservative Autocorrect</string>
+    <string name="settings_autocorrect_desc">Correct single-edit typos only when candidate is 5x+ more frequent</string>
+
+    <string name="settings_section_clipboard_backup">Clipboard &amp; Backup</string>
+    <string name="settings_clipboard_history">Local Clipboard History</string>
+    <string name="settings_clipboard_history_desc">Keep recent copied snippets in memory only; never saved to cloud</string>
+    <string name="settings_export_backup">Export Settings &amp; Lexicon</string>
+    <string name="settings_import_backup">Import Backup File</string>
+    <string name="settings_backup_exported">Backup exported locally</string>
+    <string name="settings_backup_imported">Backup imported (%1$d words)</string>
+    <string name="settings_backup_error">Could not read or write backup file</string>
+
+    <!-- Lexicon Manager -->
+    <string name="lexicon_title">Personal Lexicon</string>
+    <string name="lexicon_subtitle">Words learned on-device only. Never synced or uploaded.</string>
+    <string name="lexicon_empty_title">No learned words yet</string>
+    <string name="lexicon_empty_desc">Words you type and commit in Ekush appear here automatically with frequency ranking.</string>
+    <string name="lexicon_add_word">Add Word</string>
+    <string name="lexicon_word_hint">Bangla or English word</string>
+    <string name="lexicon_clear_all">Clear All</string>
+    <string name="lexicon_freq_label">Uses: %1$d</string>
+    <string name="lexicon_delete_word">Delete word</string>
+
+    <!-- About & Licenses (Blueprint Part 07.2 & 07.4) -->
+    <string name="about_title">About &amp; Licenses</string>
+    <string name="about_developer_card_title">NaserX Labs · Abu Naser Khan</string>
+    <string name="about_developer_card_desc">Developed and maintained by NaserX Labs (Abu Naser Khan) and Ekush contributors. Free forever under GPL-3.0.</string>
+    <string name="about_version_label">Version %1$s · Zero Internet Permission</string>
+    <string name="about_reopen_onboarding">Re-run First-Run Setup Wizard</string>
+    <string name="about_privacy_title">Privacy Architecture</string>
+    <string name="about_privacy_bullets">• Zero INTERNET permission in AndroidManifest.xml\n• All phonetic processing &amp; dictionary lookup run 100% offline\n• Personal lexicon stays in local Room database\n• No analytics, no ads, no third-party tracking SDKs\n• Backups &amp; crash logs are manual user-triggered exports</string>
+    <string name="about_export_crash_report">Prepare Manual Diagnostic Report</string>
+    <string name="about_licenses_title">Open Source Attribution</string>
+    <string name="about_diagnostic_copied">Diagnostic summary copied to clipboard</string>
+
+    <!-- IME Accessibility & UI -->
+    <string name="ime_a11y_backspace">Backspace</string>
+    <string name="ime_a11y_enter">Enter</string>
+    <string name="ime_a11y_shift">Shift</string>
+    <string name="ime_a11y_space">Space</string>
+    <string name="ime_a11y_mode_switch">Switch typing mode</string>
+    <string name="ime_a11y_numbers">Numbers and symbols</string>
+    <string name="ime_a11y_hasanta">Hasanta</string>
+    <string name="ime_a11y_tab">Tab</string>
+    <string name="ime_a11y_suggestion_slot">Suggestion %1$d: %2$s</string>
+    <string name="ime_revert_chip">Undo correction: %1$s</string>
+    <string name="ime_clipboard_empty">Clipboard empty</string>
+
+    <!-- Dialogs & Helpers -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_confirm_clear">Clear All</string>
+    <string name="lexicon_clear_confirm_title">Clear personal lexicon?</string>
+    <string name="lexicon_clear_confirm_body">All locally learned words and frequency scores will be permanently removed from this device.</string>
+    <string name="sandbox_copied_message">Bangla output copied to clipboard</string>
+    <string name="theme_preview_label">Live Keyboard Preview</string>
+    <string name="about_attribution_heliboard">HeliBoard / OpenBoard / AOSP IME · GPL-3.0</string>
+    <string name="about_attribution_openbangla">OpenBangla Phonetic Grammar · MIT</string>
+    <string name="about_attribution_fonts">Noto Sans Bengali, Noto Serif Bengali &amp; Inter · SIL OFL 1.1</string>
+    <string name="about_attribution_ekush">Ekush Bangla Keyboard · NaserX Labs (Abu Naser Khan) · GPL-3.0</string>
+</resources>

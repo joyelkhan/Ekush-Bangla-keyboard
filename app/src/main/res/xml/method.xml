@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2026 Ekush contributors
+  Licensed under the GNU General Public License v3.0 (GPL-3.0).
+-->
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.example.MainActivity"
+    android:supportsSwitchingToNextInputMethod="true">
+    <subtype
+        android:label="@string/subtype_bangla_phonetic"
+        android:imeSubtypeLocale="bn_BD"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="ekush_mode=phonetic" />
+    <subtype
+        android:label="@string/subtype_bangla_fixed"
+        android:imeSubtypeLocale="bn_BD"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="ekush_mode=fixed" />
+    <subtype
+        android:label="@string/subtype_english_us"
+        android:imeSubtypeLocale="en_US"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="ekush_mode=english" />
+</input-method>

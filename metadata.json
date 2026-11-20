@@ -1,0 +1,6 @@
+{
+  "name": "Ekush",
+  "description": "Avro-style Bangla phonetic & fixed-layout Android keyboard. Open-source (GPL-3.0), offline, zero internet permission.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

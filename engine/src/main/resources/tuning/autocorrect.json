@@ -1,0 +1,11 @@
+{
+  "version": "1.1.0",
+  "source": "Ekush Production Blueprint Part 03.5 & 04.6 + Bengali TypoModel",
+  "maxEditDistance": 2,
+  "allowTransposition": true,
+  "minCandidateFrequency": 500,
+  "minFrequencyRatio": 5.0,
+  "minTypoConfidence": 0.45,
+  "neverTouchQuotedText": true,
+  "neverTouchComposingRegion": true
+}

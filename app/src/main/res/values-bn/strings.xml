@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2026 Ekush contributors
+  Licensed under the GNU General Public License v3.0 (GPL-3.0).
+-->
+<resources>
+    <string name="app_name">একুশ</string>
+    <string name="ime_service_name">একুশ বাংলা কিবোর্ড</string>
+    <string name="app_tagline_heritage">মাতৃভাষায়, গর্বে।</string>
+    <string name="app_tagline_function">অভ্র-ধাঁচের ফনেটিক বাংলা টাইপিং, অ্যান্ড্রয়েডের জন্য নতুন রূপে।</string>
+
+    <!-- Subtypes -->
+    <string name="subtype_bangla_phonetic">বাংলা (ফনেটিক)</string>
+    <string name="subtype_bangla_fixed">বাংলা (নির্ধারিত লেআউট)</string>
+    <string name="subtype_english_us">ইংরেজি (US)</string>
+
+    <!-- Modes -->
+    <string name="mode_phonetic">ফনেটিক</string>
+    <string name="mode_fixed">নির্ধারিত বাংলা</string>
+    <string name="mode_english">ইংরেজি</string>
+    <string name="mode_numbers">১২৩</string>
+
+    <!-- Onboarding (Blueprint Part 03.11) -->
+    <string name="onboarding_skip">এড়িয়ে যান</string>
+    <string name="onboarding_start">শুরু করুন</string>
+    <string name="onboarding_next">পরবর্তী</string>
+    <string name="onboarding_finish">সম্পন্ন</string>
+    <string name="onboarding_step1_title">একুশ</string>
+    <string name="onboarding_step1_subtitle">১৯৫২-র ভাষা আন্দোলনের চেতনায় নির্মিত। অফলাইন, ওপেন-সোর্স, কোনো ইন্টারনেট অনুমতি ছাড়াই।</string>
+    <string name="onboarding_step2_title">২টি সহজ ধাপে একুশ চালু করুন</string>
+    <string name="onboarding_step2_card1_title">১. একুশ কিবোর্ড সক্রিয় করুন</string>
+    <string name="onboarding_step2_card1_desc">অ্যান্ড্রয়েডের ভাষা ও ইনপুট সেটিংস থেকে একুশ চালু করুন।</string>
+    <string name="onboarding_step2_card1_action">সেটিংস খুলুন</string>
+    <string name="onboarding_step2_card2_title">২. ডিফল্ট হিসেবে একুশ বেছে নিন</string>
+    <string name="onboarding_step2_card2_desc">ইনপুট মেথড তালিকা থেকে একুশ বাংলা কিবোর্ড নির্বাচন করুন।</string>
+    <string name="onboarding_step2_card2_action">কিবোর্ড বাছুন</string>
+    <string name="onboarding_status_done">সম্পন্ন</string>
+    <string name="onboarding_status_pending">অপেক্ষমাণ</string>
+    <string name="onboarding_step3_title">৬০ সেকেন্ডের টাইপিং পরীক্ষা</string>
+    <string name="onboarding_step3_prompt">ফনেটিক মোডে নিচের বাক্যটি টাইপ করুন:</string>
+    <string name="onboarding_step3_target">আমি বাংলায় মাত্র এক মিনিটে টাইপ করতে পারি</string>
+    <string name="onboarding_step3_hint">টাইপ করে দেখুন: ami banglay matro ek minite Taip korte pari</string>
+    <string name="onboarding_step3_input_label">আপনার টাইপিং ঘর</string>
+    <string name="onboarding_step3_success">চমৎকার! আপনার বাংলা কিবোর্ড এখন প্রস্তুত।</string>
+    <string name="onboarding_privacy_note">কোনো অ্যাকাউন্ট নেই, অ্যানালিটিক্স নেই, ইন্টারনেট অনুমতি নেই।</string>
+
+    <!-- Navigation Tabs -->
+    <string name="nav_sandbox">পরীক্ষা</string>
+    <string name="nav_themes">থিম</string>
+    <string name="nav_settings">সেটিংস</string>
+    <string name="nav_lexicon">শব্দভান্ডার</string>
+    <string name="nav_about">পরিচিতি</string>
+
+    <!-- Sandbox / Preview -->
+    <string name="sandbox_title">লাইভ টাইপিং ও ইঞ্জিন পরীক্ষা</string>
+    <string name="sandbox_subtitle">ফনেটিক নিয়ম, যুক্তবর্ণ ও আপনার সক্রিয় সিস্টেম কিবোর্ড পরীক্ষা করুন।</string>
+    <string name="sandbox_phonetic_label">ফনেটিক ইঞ্জিন পরীক্ষাগার (খাঁটি কটলিন)</string>
+    <string name="sandbox_phonetic_hint">ইংরেজি অক্ষরে বাংলা লিখুন (যেমন bangladesh, bishwabidyalay, ksha)</string>
+    <string name="sandbox_output_label">তাৎক্ষণিক বাংলা আউটপুট</string>
+    <string name="sandbox_system_field_label">সিস্টেম কিবোর্ড পরীক্ষার ঘর</string>
+    <string name="sandbox_system_field_hint">আপনার সক্রিয় অ্যান্ড্রয়েড কিবোর্ড দিয়ে টাইপ করতে এখানে স্পর্শ করুন</string>
+    <string name="sandbox_otp_field_label">ওটিপি / নম্বর ঘর (সর্বদা ইংরেজি সংখ্যা)</string>
+    <string name="sandbox_enable_banner">একুশ এখনো আপনার সক্রিয় ডিফল্ট কিবোর্ড নয়। চালু বা পরিবর্তন করতে স্পর্শ করুন।</string>
+    <string name="sandbox_copy_output">বাংলা লেখা কপি করুন</string>
+    <string name="sandbox_clear">মুছুন</string>
+    <string name="sandbox_sample_chips_title">দ্রুত ইঞ্জিন উদাহরণ</string>
+
+    <!-- Themes (Blueprint Part 05.4) -->
+    <string name="themes_title">থিম ও কনট্রাস্ট</string>
+    <string name="themes_subtitle">WCAG AA কনট্রাস্ট মানদণ্ডে পরীক্ষিত ৬টি থিম।</string>
+    <string name="theme_ekush">একুশ</string>
+    <string name="theme_ekush_desc">পতাকার সবুজ ও উষ্ণ কাগজের রং</string>
+    <string name="theme_night">রাত · Night</string>
+    <string name="theme_night_desc">গভীর অন্ধকার ও স্পষ্ট মিন্ট অ্যাকসেন্ট</string>
+    <string name="theme_paper">কাগজ · Paper</string>
+    <string name="theme_paper_desc">লেখকদের জন্য কালো-সাদা কাগজের আবহ</string>
+    <string name="theme_boishakh">বৈশাখ · Boishakh</string>
+    <string name="theme_boishakh_desc">পহেলা বৈশাখের উৎসবমুখর লাল-সোনালি রং</string>
+    <string name="theme_river">নদী · River</string>
+    <string name="theme_river_desc">শান্ত নীল-সবুজ আবহ</string>
+    <string name="theme_material_you">ম্যাটেরিয়াল ইউ</string>
+    <string name="theme_material_you_desc">অ্যান্ড্রয়েড ১২+ ওয়ালপেপারের রং অনুসরণ করে</string>
+    <string name="theme_appearance_mode">রূপরেখা</string>
+    <string name="theme_appearance_system">সিস্টেম</string>
+    <string name="theme_appearance_light">হালকা</string>
+    <string name="theme_appearance_dark">অন্ধকার</string>
+    <string name="theme_wcag_pass">WCAG AA কনট্রাস্ট যাচাইকৃত</string>
+    <string name="theme_wcag_ratio_format">মূল পাঠ্য %1$.1f:1 · কী %2$.1f:1</string>
+
+    <!-- Settings Tree (Blueprint Part 03.10) -->
+    <string name="settings_title">কিবোর্ড সেটিংস</string>
+    <string name="settings_section_typing">টাইপিং</string>
+    <string name="settings_default_mode">ডিফল্ট টাইপিং মোড</string>
+    <string name="settings_auto_conjuncts">স্বয়ংক্রিয় যুক্তবর্ণ (ফনেটিক)</string>
+    <string name="settings_auto_conjuncts_desc">ব্যঞ্জনগুচ্ছে স্বয়ংক্রিয়ভাবে হসন্ত যোগ করুন (যেমন ksh → ক্ষ)</string>
+    <string name="settings_bangla_digits">বাংলা সংখ্যা অগ্রাধিকার দিন (০-৯)</string>
+    <string name="settings_bangla_digits_desc">সাজেশন ও নম্বর প্যাডে বাংলা সংখ্যা দেখান; ওটিপি ঘরে সর্বদা ইংরেজি থাকবে</string>
+    <string name="settings_flutter_fallback">প্রতি চাপে অক্ষর যুক্ত করুন</string>
+    <string name="settings_flutter_fallback_desc">কম্পোজিং রিজিওন সমর্থন না করা অ্যাপের জন্য সামঞ্জস্য মোড</string>
+
+    <string name="settings_section_languages">ভাষা</string>
+    <string name="settings_per_app_memory">অ্যাপভিত্তিক মোড স্মৃতি</string>
+    <string name="settings_per_app_memory_desc">প্রতিটি অ্যাপের জন্য আলাদাভাবে বাংলা বা ইংরেজি মোড মনে রাখুন</string>
+
+    <string name="settings_section_experience">টাইপিং অভিজ্ঞতা</string>
+    <string name="settings_haptics">কী চাপে কম্পন (হ্যাপটিক্স)</string>
+    <string name="settings_haptics_desc">কী চাপ, সাজেশন ও মোড পরিবর্তনে মৃদু কম্পন</string>
+    <string name="settings_haptic_intensity">কম্পনের মাত্রা</string>
+    <string name="haptic_gentle">মৃদু</string>
+    <string name="haptic_medium">মাঝারি</string>
+    <string name="haptic_strong">তীব্র</string>
+    <string name="settings_sound">কী চাপে শব্দ</string>
+    <string name="settings_sound_desc">কী চাপে হালকা ক্লিক শব্দ (ডিফল্টভাবে বন্ধ)</string>
+    <string name="settings_key_height">কী উচ্চতা (%1$d dp)</string>
+    <string name="settings_gap_scale">কী ফাঁক অনুপাত (%1$.1fx)</string>
+    <string name="settings_long_press_delay">লং-প্রেস বিলম্ব (%1$d ms)</string>
+
+    <string name="settings_section_suggestions">সাজেশন ও স্বয়ংক্রিয় সংশোধন</string>
+    <string name="settings_suggestions_enabled">সাজেশন বার দেখান</string>
+    <string name="settings_suggestions_enabled_desc">বিভক্তি-সচেতন বাংলা অভিধান ও ব্যক্তিগত শব্দভান্ডার সাজেশন</string>
+    <string name="settings_autocorrect">সংযত স্বয়ংক্রিয় সংশোধন</string>
+    <string name="settings_autocorrect_desc">সম্ভাব্য শব্দ ৫ গুণ বেশি প্রচলিত হলে তবেই বানান সংশোধন করুন</string>
+
+    <string name="settings_section_clipboard_backup">ক্লিপবোর্ড ও ব্যাকআপ</string>
+    <string name="settings_clipboard_history">স্থানীয় ক্লিপবোর্ড ইতিহাস</string>
+    <string name="settings_clipboard_history_desc">সাম্প্রতিক কপি করা লেখা কেবল মেমরিতে রাখুন; ক্লাউডে নয়</string>
+    <string name="settings_export_backup">সেটিংস ও শব্দভান্ডার এক্সপোর্ট</string>
+    <string name="settings_import_backup">ব্যাকআপ ফাইল ইমপোর্ট</string>
+    <string name="settings_backup_exported">ব্যাকআপ স্থানীয়ভাবে সংরক্ষিত হয়েছে</string>
+    <string name="settings_backup_imported">ব্যাকআপ ইমপোর্ট সম্পন্ন (%1$dটি শব্দ)</string>
+    <string name="settings_backup_error">ব্যাকআপ ফাইল পড়া বা লেখা যায়নি</string>
+
+    <!-- Lexicon Manager -->
+    <string name="lexicon_title">ব্যক্তিগত শব্দভান্ডার</string>
+    <string name="lexicon_subtitle">শেখা শব্দ কেবল আপনার ডিভাইসেই সংরক্ষিত থাকে।</string>
+    <string name="lexicon_empty_title">এখনো কোনো শেখা শব্দ নেই</string>
+    <string name="lexicon_empty_desc">একুশে টাইপ করা শব্দগুলো ব্যবহারের সংখ্যা অনুযায়ী স্বয়ংক্রিয়ভাবে এখানে যুক্ত হবে।</string>
+    <string name="lexicon_add_word">শব্দ যোগ করুন</string>
+    <string name="lexicon_word_hint">বাংলা বা ইংরেজি শব্দ</string>
+    <string name="lexicon_clear_all">সব মুছুন</string>
+    <string name="lexicon_freq_label">ব্যবহার: %1$d</string>
+    <string name="lexicon_delete_word">শব্দ মুছুন</string>
+
+    <!-- About & Licenses (Blueprint Part 07.2 & 07.4) -->
+    <string name="about_title">পরিচিতি ও লাইসেন্স</string>
+    <string name="about_developer_card_title">NaserX Labs · আবু নাসের খান</string>
+    <string name="about_developer_card_desc">NaserX Labs (আবু নাসের খান) ও একুশ অবদানকারীদের দ্বারা নির্মিত ও রক্ষণাবেক্ষিত। GPL-3.0 লাইসেন্সে চিরতরে বিনামূল্যে।</string>
+    <string name="about_version_label">সংস্করণ %1$s · কোনো ইন্টারনেট অনুমতি নেই</string>
+    <string name="about_reopen_onboarding">প্রথমবার সেটআপ উইজার্ড পুনরায় চালু করুন</string>
+    <string name="about_privacy_title">গোপনীয়তা কাঠামো</string>
+    <string name="about_privacy_bullets">• AndroidManifest.xml-এ কোনো INTERNET অনুমতি নেই\n• সব ফনেটিক রূপান্তর ও অভিধান অনুসন্ধান ১০০% অফলাইন\n• ব্যক্তিগত শব্দভান্ডার কেবল স্থানীয় Room ডেটাবেসে থাকে\n• কোনো অ্যানালিটিক্স, বিজ্ঞাপন বা ট্র্যাকিং SDK নেই\n• ব্যাকআপ ও ত্রুটি প্রতিবেদন কেবল ব্যবহারকারীর নিজস্ব উদ্যোগে রপ্তানিযোগ্য</string>
+    <string name="about_export_crash_report">ম্যানুয়াল ডায়াগনস্টিক প্রতিবেদন তৈরি করুন</string>
+    <string name="about_licenses_title">ওপেন-সোর্স কৃতজ্ঞতা ও লাইসেন্স</string>
+    <string name="about_diagnostic_copied">ডায়াগনস্টিক সারসংক্ষেপ ক্লিপবোর্ডে কপি হয়েছে</string>
+
+    <!-- IME Accessibility & UI -->
+    <string name="ime_a11y_backspace">ব্যাকস্পেস</string>
+    <string name="ime_a11y_enter">এন্টার</string>
+    <string name="ime_a11y_shift">শিফট</string>
+    <string name="ime_a11y_space">স্পেস</string>
+    <string name="ime_a11y_mode_switch">টাইপিং মোড পরিবর্তন</string>
+    <string name="ime_a11y_numbers">সংখ্যা ও প্রতীক</string>
+    <string name="ime_a11y_hasanta">হসন্ত</string>
+    <string name="ime_a11y_tab">ট্যাব</string>
+    <string name="ime_a11y_suggestion_slot">সাজেশন %1$d: %2$s</string>
+    <string name="ime_revert_chip">সংশোধন বাতিল: %1$s</string>
+    <string name="ime_clipboard_empty">ক্লিপবোর্ড খালি</string>
+
+    <!-- Dialogs & Helpers -->
+    <string name="action_cancel">বাতিল</string>
+    <string name="action_confirm_clear">সব মুছুন</string>
+    <string name="lexicon_clear_confirm_title">ব্যক্তিগত শব্দভান্ডার মুছে ফেলবেন?</string>
+    <string name="lexicon_clear_confirm_body">এই ডিভাইসে স্থানীয়ভাবে সংরক্ষিত সব শব্দ ও ব্যবহারের হিসাব স্থায়ীভাবে মুছে যাবে।</string>
+    <string name="sandbox_copied_message">বাংলা লেখা ক্লিপবোর্ডে কপি হয়েছে</string>
+    <string name="theme_preview_label">তাৎক্ষণিক কিবোর্ড প্রদর্শনী</string>
+    <string name="about_attribution_heliboard">HeliBoard / OpenBoard / AOSP IME · GPL-3.0</string>
+    <string name="about_attribution_openbangla">OpenBangla ফনেটিক ব্যাকরণ · MIT</string>
+    <string name="about_attribution_fonts">Noto Sans Bengali, Noto Serif Bengali ও Inter · SIL OFL 1.1</string>
+    <string name="about_attribution_ekush">একুশ বাংলা কিবোর্ড · NaserX Labs (আবু নাসের খান) · GPL-3.0</string>
+</resources>

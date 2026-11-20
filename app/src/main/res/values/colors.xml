@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2026 Ekush contributors
+  Licensed under the GNU General Public License v3.0 (GPL-3.0).
+-->
+<resources>
+    <color name="ekush_green">#FF006A4E</color>
+    <color name="ekush_red">#FFF42A41</color>
+    <color name="ekush_ink">#FF16241F</color>
+    <color name="ekush_paper">#FFFAF7F0</color>
+    <color name="ekush_night">#FF0E1B17</color>
+    <color name="ekush_mint">#FF3ECF9A</color>
+</resources>

@@ -1,0 +1,9 @@
+{
+  "version": "1.1.0",
+  "source": "Ekush Phase 2 Context & Personalization Ranking",
+  "alphaFrequencyWeight": 1.0,
+  "betaContextWeight": 2.4,
+  "gammaPhoneticWeight": 1.8,
+  "deltaPersonalWeight": 2.2,
+  "personalPromotionThreshold": 2
+}
