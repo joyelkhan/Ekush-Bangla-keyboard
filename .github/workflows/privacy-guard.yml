@@ -1,32 +1,38 @@
-# Ekush Privacy Guard CI Workflow (Blueprint Part 07.4 & Prompt 7)
-# WHY: Ekush is an offline-first Bangla IME that promises ZERO internet access.
-# Any PR introducing android.permission.INTERNET, unapproved permissions, or
-# unapproved network libraries must fail CI immediately before merge.
+# Ekush Privacy Guard & APK Build Workflow (Blueprint Part 07.4 & Prompt 7)
+# WHY: Ekush is an offline-first Bangla IME that guarantees ZERO internet access.
+# This workflow runs on every push/PR (and manual trigger), verifies zero network
+# permissions/dependencies, runs all unit/Robolectric tests, builds Ekush-debug.apk,
+# and uploads it as a downloadable GitHub Actions Artifact.
 
-name: Ekush Privacy Guard & Tests
+name: Ekush Privacy Guard & Build APK
 
 on:
   push:
-    branches: [ main, master ]
   pull_request:
+  workflow_dispatch:
 
 jobs:
-  privacy-and-tests:
+  privacy-tests-and-apk:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
+          java-version: '21'
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Verify zero INTERNET or unapproved permissions in manifests
+      - name: Set up Gradle 9.3.1
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
+
+      - name: Verify zero INTERNET or unapproved permissions in source manifests
         run: |
           python3 - <<'PY'
           import pathlib, xml.etree.ElementTree as ET, sys
@@ -52,14 +58,14 @@ jobs:
                   allow.add(s)
 
           for mf in pathlib.Path(".").rglob("AndroidManifest.xml"):
-              if "build/intermediates/merged_manifest" in str(mf) or "/src/" in str(mf):
+              if "/src/" in mf.as_posix():
                   tree = ET.parse(mf)
                   for node in tree.findall(".//uses-permission"):
                       name = node.attrib.get("{http://schemas.android.com/apk/res/android}name", "")
                       if name in forbidden or (name and name not in allow):
                           print(f"PRIVACY VIOLATION in {mf}: {name}", file=sys.stderr)
                           sys.exit(1)
-          print("Privacy manifest check PASSED: zero INTERNET or unapproved permissions.")
+          print("Source manifest privacy check PASSED.")
           PY
 
       - name: Verify zero network libraries in Gradle files
@@ -80,7 +86,16 @@ jobs:
           print("Dependency allowlist check PASSED.")
           PY
 
-      - name: Run Engine & App Unit/Robolectric Tests and Debug Build
+      - name: Generate ephemeral debug.keystore for CI if absent
+        run: |
+          if [ ! -f debug.keystore ]; then
+            keytool -genkey -v -keystore debug.keystore \
+              -storepass android -alias androiddebugkey -keypass android \
+              -keyalg RSA -keysize 2048 -validity 10000 \
+              -dname "CN=Android Debug,O=Android,C=US"
+          fi
+
+      - name: Run Engine & App Unit/Robolectric Tests and Build Debug APK
         run: gradle :engine:test :app:testDebugUnitTest :app:assembleDebug
 
       - name: Re-verify merged debug manifest after Gradle build
@@ -89,3 +104,14 @@ jobs:
             echo "PRIVACY VIOLATION in merged manifest!"
             exit 1
           fi
+          echo "Merged manifest zero-network check PASSED."
+
+      - name: Package Ekush-debug.apk artifact
+        run: cp app/build/outputs/apk/debug/app-debug.apk Ekush-debug.apk
+
+      - name: Upload Ekush-debug.apk for download
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ekush-debug-apk
+          path: Ekush-debug.apk
+          if-no-files-found: error
